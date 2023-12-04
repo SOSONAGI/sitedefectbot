@@ -5,7 +5,7 @@ import time
 
 api_key = st.secrets["OPENAI_API_KEY"]
 
-client = OpenAI(api_key=API_KEY)
+client = OpenAI(api_key=api_key)
 
 #thread id를 하나로 관리하기 위함
 if 'thread_id' not in st.session_state:
