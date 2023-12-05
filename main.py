@@ -29,7 +29,7 @@ for msg in thread_messages.data:
         st.write(msg.content[0].text.value)
 
 #입력창에 입력을 받아서 입력된 내용으로 메세지 생성
-prompt = st.chat_input("물어보고 싶은 것을 입력하세요!")
+prompt = st.chat_input("하자가 가장 많이 발생한 동 및 호수 알려줘!")
 if prompt:
     message = client.beta.threads.messages.create(
         thread_id=thread_id,
